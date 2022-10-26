@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,600&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  letter-spacing: 0.2px;
+}
+/*this is for the navigation bar*/
+.showcase{
+  background:url(../SHOE.jpg);
+  background-position: center;
+  height: 400px;
+  padding: 140px 100px;
+}
+
+/*this is for the grid*/
+.grid-container{
+  display: grid;
+  position: relative;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid #f006dc;
+  padding: 10px;
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 500px 500px;
+  justify-content: center;
+}
+.nike{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  background:url(../nike.jpg);
+  background-position:center;
+}
+.addidas{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  background:url(../addidas.jpg);
+  background-position:center;
+}
+.puma{
+  grid-column:2/3;
+  grid-row: 2/3;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  background:url(../puma.jpg);
+  background-position:center;
+}
+/*this is for button*/
+.btn-nike{
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  z-index: 1;
+  outline: none;
+  border: 3px solid #0b8ade;
+  float: left;
+  top: 835px;
+}
+.btn-nike:hover{
+  color: #fff;
+  cursor: pointer;
+}
+.btn-nike:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #0b8ade;
+}
+.btn-nike:hover:before {
+  transition: 0.5 all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+.btn-addidas{
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+  border: 3px solid #0b8ade;
+  position: relative;
+  z-index: 1;
+  float: left;
+  top: 325px;
+}
+.btn-addidas:hover{
+  color: #fff;
+  cursor: pointer;
+}
+.btn-addidas:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #0b8ade;
+}
+.btn-addidas:hover:before {
+  transition: 0.5 all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+.btn-puma{
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+  border: 3px solid #0b8ade;
+  position: relative;
+  z-index: 1;
+  float: left;
+  top: 325px;
+}
+.btn-puma:hover{
+  color: #fff;
+  cursor: pointer;
+}
+.btn-puma:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #0b8ade;
+}
+.btn-puma:hover:before {
+  transition: 0.5 all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+.nike h2{
+  color:white;
+  font-size: 3rem;
+}
+.addidas h2{
+  color:white;
+  font-size: 3rem;
+}
+.puma h2{
+  color:white;
+  font-size: 3rem;
+}
+@media screen and(max-width: 547px){
+  .grid-container {
+  grid-template-columns: 400px;
+  grid-template-rows: 500px 500px 500px;
+  justify-content: center;
+  }
+}
+/*This is to do with the footer*/
+.container_footer{
+  max-width:1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{list-style: none;
+}
+.footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h1{
+  font-size:30px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #0b8ade;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:las-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration:none;
+  font-weight:300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 10px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    padding: 30px;
+  }
+  @media(max-width: 547px){
+    .footer-col{
+      width: 100%;
+  }
+}
